@@ -1,4 +1,4 @@
-(ns number-to-words.polish (:gen-class))
+(ns woog1e.number-to-words.polish)
 
 (def ^:private n-0-9 ["zero" "jeden" "dwa" "trzy" "cztery" "pięć" "sześć" "siedem" "osiem" "dziewięć"])
 
