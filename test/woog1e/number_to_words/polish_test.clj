@@ -19,7 +19,7 @@
                 [987654321 "dziewięćset osiemdziesiąt siedem milionów sześćset pięćdziesiąt cztery tysiące trzysta dwadzieścia jeden"]
                 [113000 "sto trzynaście tysięcy"]
                 [11 "jedenaście"]
-                [112515 "sto dwanaście tysięcy pięćset pietnaście"]
+                [112515 "sto dwanaście tysięcy pięćset piętnaście"]
                 [1001001 "milion tysiąc jeden"]
                 [4137 "cztery tysiące sto trzydzieści siedem"]
                 [111222333444 "sto jedenaście miliardów dwieście dwadzieścia dwa miliony trzysta trzydzieści trzy tysiące czterysta czeterdzieści cztery"]])
