@@ -1,5 +1,5 @@
-(ns number-to-words.polish-test
-  (:require [number-to-words.polish :as ntwp]))
+(ns woog1e.number-to-words.polish-test
+  (:require [woog1e.number-to-words.polish :as ntwp]))
 
 (def test-data [[0 "zero"]
                 [1 "jeden"]
