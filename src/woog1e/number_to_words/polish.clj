@@ -5,7 +5,7 @@
 (def ^:private n-10 ["" "" "dwadzieścia" "trzydzieści" "czeterdzieści" "pięćdziesiąt" "sześćdziesiąt" "siedemdziesiąt"
                      "osiemdziesiąt" "dziewięćdziesiąt"])
 
-(def ^:private n-10-19 ["dziesięć" "jedenaście" "dwanaście" "trzynaście" "czternaście" "pietnaście" "szesnaście"
+(def ^:private n-10-19 ["dziesięć" "jedenaście" "dwanaście" "trzynaście" "czternaście" "piętnaście" "szesnaście"
                         "siedemnaście" "osiemnaście" "dziewiętnaście"])
 
 (def ^:private n-100 ["" "sto" "dwieście" "trzysta" "czterysta" "pięćset" "sześćset" "siedemset" "osiemset" "dziewięćset"])
