@@ -27,5 +27,3 @@
 (clojure.test/deftest number-test
   (doseq [[number expected] test-data]
     (clojure.test/is (= expected (ntwp/->polish-number-to-words number)))))
-
-(clojure.test/run-tests)
