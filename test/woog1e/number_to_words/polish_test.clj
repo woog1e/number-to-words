@@ -22,7 +22,7 @@
                 [112515 "sto dwanaście tysięcy pięćset piętnaście"]
                 [1001001 "milion tysiąc jeden"]
                 [4137 "cztery tysiące sto trzydzieści siedem"]
-                [111222333445 "sto jedenaście miliardów dwieście dwadzieścia dwa miliony trzysta trzydzieści trzy tysiące czterysta czeterdzieści cztery"]])
+                [111222333444 "sto jedenaście miliardów dwieście dwadzieścia dwa miliony trzysta trzydzieści trzy tysiące czterysta czeterdzieści cztery"]])
 
 (clojure.test/deftest number-test
   (doseq [[number expected] test-data]
