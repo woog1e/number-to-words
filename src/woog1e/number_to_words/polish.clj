@@ -2,21 +2,21 @@
 
 (def ^:private n-0-9 ["zero" "jeden" "dwa" "trzy" "cztery" "pięć" "sześć" "siedem" "osiem" "dziewięć"])
 
-(def ^:private n-10 ["" "" "dwadzieścia" "trzydzieści" "czeterdzieści" "pięćdziesiąt" "sześćdziesiąt" "siedemdziesiąt"
-                     "osiemdziesiąt" "dziewięćdziesiąt"])
+(def ^:private n-10 ["" "" "dwadzieścia" "trzydzieści" "czeterdzieści" "pięćdziesiąt" "sześćdziesiąt"
+                     "siedemdziesiąt" "osiemdziesiąt" "dziewięćdziesiąt"])
 
 (def ^:private n-10-19 ["dziesięć" "jedenaście" "dwanaście" "trzynaście" "czternaście" "piętnaście" "szesnaście"
                         "siedemnaście" "osiemnaście" "dziewiętnaście"])
 
-(def ^:private n-100 ["" "sto" "dwieście" "trzysta" "czterysta" "pięćset" "sześćset" "siedemset" "osiemset" "dziewięćset"])
+(def ^:private n-100 ["" "sto" "dwieście" "trzysta" "czterysta" "pięćset" "sześćset" "siedemset" "osiemset"
+                      "dziewięćset"])
 
-(def ^:private types [[nil nil nil]
-                      ["tysiąc" "tysiące" "tysięcy"]
-                      ["milion" "miliony" "milionów"]
-                      ["miliard" "miliardy" "miliardów"]
-                      ["bilion" "biliony" "bilionów"]
-                      ["biliard" "biliardy" "biliardów"]
-                      ["trylion" "tryliony" "trylionów"]])
+(def ^:private types-data ["milion" "miliard" "bilion" "biliard" "trylion" "tryliard" "kwadrylion" "kwadryliard"
+                           "kwintylion" "kwintyliard" "sekstylion" "sekstyliard" "septylion" "septyliard"
+                           "oktylion" "oktyliard" "nonilion" "noniliard" "decylion" "decyliard" "undecylion"])
+
+(def ^:private types (into [["" "" ""] ["tysiąc" "tysiące" "tysięcy"]]
+                           (map (fn [type] [type (str type "y") (str type "ów")]) types-data)))
 
 (defn- divide-mod [number divisor]
   (int (mod (/ number divisor) divisor)))
