@@ -50,7 +50,7 @@
      (get-suffix number type)]))
 
 (defn ->polish-number-to-words [number]
-  {:pre [(int? number)]}
+  {:pre [(integer? number)]}
   (if (= number 0)
     (nth n-0-9 0)
     (->>

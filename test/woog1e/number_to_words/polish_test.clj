@@ -28,3 +28,8 @@
 (clojure.test/deftest number-test
   (doseq [[number expected] test-data]
     (clojure.test/is (= expected (ntwp/->polish-number-to-words number)))))
+
+(clojure.test/deftest pre-condition-test
+  (clojure.test/is (thrown? java.lang.AssertionError (ntwp/->polish-number-to-words 1.1)))
+  (clojure.test/is (thrown? java.lang.AssertionError (ntwp/->polish-number-to-words \c)))
+  (clojure.test/is (thrown? java.lang.AssertionError (ntwp/->polish-number-to-words ""))))
