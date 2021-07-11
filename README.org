@@ -1,4 +1,4 @@
 #+TITLE: Number to words
 #+AUTHOR: Konrad Lipecki
 
-Just minimal library for number to polish words conversion.
+minimal library that converts numbers to polish words
