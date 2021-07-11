@@ -13,7 +13,7 @@
 
 (def ^:private types-data ["milion" "miliard" "bilion" "biliard" "trylion" "tryliard" "kwadrylion" "kwadryliard"
                            "kwintylion" "kwintyliard" "sekstylion" "sekstyliard" "septylion" "septyliard"
-                           "oktylion" "oktyliard" "nonilion" "decylion" "undecylion"])
+                           "oktylion" "oktyliard" "nonilion" "noniliard" "decylion" "decyliard" "undecylion"])
 
 (def ^:private types (into [["" "" ""] ["tysiąc" "tysiące" "tysięcy"]]
                            (map (fn [type] [type (str type "y") (str type "ów")]) types-data)))
